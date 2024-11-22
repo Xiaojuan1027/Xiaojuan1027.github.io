@@ -19,6 +19,46 @@ header h1 {
     font-size: 2.5em;
 }
 
+/* 顶部导航样式 */
+.top-nav {
+    display: flex;                /* 使用弹性布局 */
+    justify-content: center;      /* 水平居中 */
+    align-items: center;          /* 垂直居中 */
+    background: #007BFF;          /* 背景颜色 */
+    padding: 10px 0;              /* 内边距 */
+    position: fixed;              /* 固定在页面顶部 */
+    top: 0;                       /* 距离顶部为0 */
+    width: 100%;                  /* 占满宽度 */
+    z-index: 1000;                /* 确保在最前 */
+}
+
+.top-nav ul {
+    list-style: none;             /* 移除列表点 */
+    margin: 0;
+    padding: 0;
+    display: flex;                /* 水平排列列表项 */
+}
+
+.top-nav ul li {
+    margin: 0 15px;               /* 列表项之间的间距 */
+}
+
+.top-nav ul li a {
+    color: #fff;                  /* 文本颜色 */
+    text-decoration: none;        /* 去掉下划线 */
+    font-weight: bold;
+}
+
+.top-nav ul li a:hover {
+    text-decoration: underline;   /* 鼠标悬停效果 */
+}
+
+/* 为了避免内容被遮挡，给正文添加顶部间距 */
+body {
+    margin-top: 60px;             /* 根据导航栏高度调整 */
+}
+
+
 nav ul {
     list-style-type: none;
     padding: 0;
