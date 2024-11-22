@@ -1,99 +1,60 @@
+/* 全局样式 */
 body {
     font-family: 'Arial', sans-serif;
-    /*background-color: #f4f4f4;*/
-    background: linear-gradient(to bottom, #ffffff, #007BFF); /* 添加渐变背景 */
-    color: #333;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background: #007BFF;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+    color: #333;
+    background: linear-gradient(to bottom, #ffffff, #007BFF); /* 白到蓝的渐变背景 */
+    margin-top: 60px; /* 为固定导航栏预留空间 */
 }
 
 /* 顶部导航样式 */
 .top-nav {
-    display: flex;                /* 使用弹性布局 */
-    justify-content: center;      /* 水平居中 */
-    align-items: center;          /* 垂直居中 */
-    background: #007BFF;          /* 背景颜色 */
-    padding: 10px 0;              /* 内边距 */
-    position: fixed;              /* 固定在页面顶部 */
-    top: 0;                       /* 距离顶部为0 */
-    width: 100%;                  /* 占满宽度 */
-    z-index: 1000;                /* 确保在最前 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .top-nav ul {
-    list-style: none;             /* 移除列表点 */
+    list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;                /* 水平排列列表项 */
+    display: flex;
 }
 
 .top-nav ul li {
-    margin: 0 15px;               /* 列表项之间的间距 */
-}
-
-.top-nav ul li a {
-    color: #fff;                  /* 文本颜色 */
-    text-decoration: none;        /* 去掉下划线 */
-    font-weight: bold;
-}
-
-.top-nav ul li a:hover {
-    text-decoration: underline;   /* 鼠标悬停效果 */
-}
-
-/* 为了避免内容被遮挡，给正文添加顶部间距 */
-body {
-    margin-top: 60px;             /* 根据导航栏高度调整 */
-}
-
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
+.top-nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav ul li a:hover {
+.top-nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* 其他布局样式 */
 section {
     padding: 20px;
     margin: 20px;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
     border-bottom: 2px solid #007BFF;
     padding-bottom: 10px;
-}
-
-ul {
-    margin-left: 20px;
 }
 
 footer {
