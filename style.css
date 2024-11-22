@@ -1,6 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    /*background-color: #f4f4f4;*/
+    background: linear-gradient(to bottom, #ffffff, #007BFF); /* 添加渐变背景 */
     color: #333;
     margin: 0;
     padding: 0;
