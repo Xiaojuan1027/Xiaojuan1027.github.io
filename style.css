@@ -43,6 +43,15 @@ body {
     text-decoration: underline;
 }
 
+.profile-image {
+    display: block;            /* 将图片单独占一行 */
+    margin: 10px auto;         /* 居中对齐 */
+    width: 150px;              /* 设置图片宽度 */
+    height: auto;              /* 按比例调整高度 */
+    border-radius: 50%;        /* 圆形头像效果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+}
+
 /* 其他布局样式 */
 section {
     padding: 20px;
