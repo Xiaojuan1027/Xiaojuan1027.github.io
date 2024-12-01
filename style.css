@@ -43,14 +43,47 @@ body {
     text-decoration: underline;
 }
 
-.profile-image {
-    display: block;            /* 将图片单独占一行 */
-    margin: 10px auto;         /* 居中对齐 */
-    width: 150px;              /* 设置图片宽度 */
-    height: auto;              /* 按比例调整高度 */
-    border-radius: 50%;        /* 圆形头像效果 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+
+/* 设置图片背景 */
+.image-section {
+    position: relative;         /* 确保文字和图片可以相对定位 */
+    height: 80vh;              /* 图片占据页面高度的五分之四 */
+    overflow: hidden;          /* 防止内容溢出 */
 }
+
+.image-section .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /* 确保图片等比例裁剪并填充容器 */
+    z-index: -1;               /* 将图片置于文字后面 */
+}
+
+.image-section .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 将文字居中 */
+    text-align: center;
+    color: white;               /* 白色文字，便于在深色背景上阅读 */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* 半透明背景，提高文字可读性 */
+    border-radius: 10px;        /* 可选，圆角效果 */
+}
+
+.image-section h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.image-section p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
 
 /* 其他布局样式 */
 section {
